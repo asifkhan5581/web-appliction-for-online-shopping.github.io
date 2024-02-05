@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>online shopping</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+
+<body>
+    <div class="right">
+        <div class="top">
+            <button id="menu-btn">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+        </div>
+        <div class="profile">
+            <div class="info">
+                <p>Hey,<b>Asif</b></p>
+                <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+                <img src="images/web bg.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ====End of top===== -->
+    </section>
+  
+
+    <!-- dashbord -->
+    <div class="dashbord">
+        <!-- dashboard-sidebar -->
+        <div class="dashboard-side" >
+            <div class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        <a href="#">
+            <i class="fa-solid fa-table-columns"></i>
+            <h2>Dashboard</h2>
+        </a>
+        <a href="#" class=" active">
+            <i class="fa-solid fa-person-military-pointing"></i>
+            <h2>Customers </h2>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-first-order-alt"></i>  
+            <h2>Order</h2>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-chart-simple"></i>   
+            <h2>Analytics</h2>
+        </a>
+        <a href="#">
+            <i class="fa-regular fa-message"></i>
+            <h2>Massages</h2>
+            <span class="massage-count">26</span>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-product-hunt"></i>   
+            <h2>Product</h2>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-bug-slash"></i>
+            <h2>Reports</h2>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-r-project"></i>
+            <h2>Add product</h2>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <h2>Log Out</h2>
+        </a>  
+    </div>
+    <!-- dashboard main caintanier -->
+    <div class="main_container">
+        <h1>Dashboard</h1>
+        <div class="date">
+            <input type="date" name="" id="">
+        </div>
+        <div class="insights">
+            <!-- Sale of dashboard -->
+            <div class="sale">
+                <span><i class="fa-solid fa-chart-simple"></i></span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Sales</h3>
+                        <h1>$25,024</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                
+                    </div>
+                    <div class="number">
+                        <p>81%</p>
+                    </div>
+                </div>
+                
+                <small class="text-muted">
+                    Last 24 Hours
+                </small>
+            </div>
+            <!-- End of sale -->
+    
+            <!-- Expenses of dashboard -->
+            <div class="expenses">
+                <span><i class="fa-brands fa-slack"></i></span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Expenses</h3>
+                        <h1>$14,160</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <p>62%</p>
+                    </div>
+                </div>
+                <small class="text-muted">
+                    Last 24 Hours
+                </small>
+            </div>
+            <!-- End of expenses -->
+    
+            <!-- Income of dashboard -->
+            <div class="income">
+                <span><i class="fa-solid fa-icons"></i></span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Income</h3>
+                        <h1>$10,864</h1>
+                    </div>
+                    <div class="progress">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <p>44%</p>
+                    </div>
+                </div>
+                <small class="text-muted">
+                    Last 24 Hours
+                </small>
+            </div>
+            <!-- End of income -->
+        </div>
+        <!-- ==============dashboard second main Recent orders================ -->
+        <div class="recent-order">
+            <h2>Recent Order</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Payment</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fold Mini Drame</td>
+                        <td>8653</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr>
+                    <tr>
+                        <td>Fold Mini Drame</td>
+                        <td>8653</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr>
+                    <tr>
+                        <td>Fold Mini Drame</td>
+                        <td>8653</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr>
+                    <tr>
+                        <td>Fold Mini Drame</td>
+                        <td>8653</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr>
+                    <tr>
+                        <td>Fold Mini Drame</td>
+                        <td>8653</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary"> Details</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#">Show All</a>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
+
+
+    <!-- ====================js for dashbaoard====================== -->
+<script>
+    const sideMenu=document.querySelector(".dashboard-side");
+const menuBtn=document.querySelector("#menu-btn");
+const closeBtn = document.querySelector(".close-btn");
+
+menuBtn.addEventListener('click',()=>{
+    sideMenu.style.display='block';
+
+})
+closeBtn.addEventListener('click',()=>{
+sideMenu.style.display='none';
+});
+
+</script>
+
+</body>
+
+</html>

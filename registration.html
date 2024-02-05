@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online shopping</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+
+<body>
+    <!-- ?nav bar section -->
+    <section id="header" class="">
+        <a href="#"> <img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+          
+         
+            <ul id="navbar">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="shop.html">shop</a></li>
+                <li> <a href="#">Product <i class="fa-solid fa-chevron-down"></i></a>
+                    <!-- sub menu product -->
+                    <ul class="product">
+                        <li> <a href="#">All product</a></li>
+                        <li> <a href="#">Categorie <i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="categorie">
+                                <li> <a href="#"> Electronics</a></li>
+                                <li> <a href="#"> clothing</a></li>
+                                <li> <a href="#"> Home ad</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Brand <i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="brand">
+                                <li> <a href="#"> Apple</a></li>
+                                <li> <a href="#"> Nike</a></li>
+                                <li> <a href="#"> Adidas</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Spectial Collecton <i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="spectial">
+                                <li> <a href="#">Holy day gift</a></li>
+                                <li> <a href="#">New Arrival</a></li>
+                                <li> <a href="#">Best seller</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Customer Reviews <i class="fa-solid fa-caret-right"></i></a>
+                            <ul class="customer">
+                                <li> <a href="#"> Top Rated</a></li>
+                                <li> <a href="#">Customer Favorite</a></li>
+                                <li> <a href="#"> Featured Reviews</a></li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </li>
+                <li> <a href="contact.html">Contact Us</a></li>
+                <li> <a href="#">Help <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="product">
+                        <!-- Sub menu Help -->
+                        <li> <a href="#">privacy & security</a></li>
+                        <li> <a href="#"> Shopping Inforomation</a>
+                        <li> <a href="#">Return & Refund Policy</a>
+                        <li> <a href="#">Order Status</a>
+                    </ul>
+                </li>
+                </li>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </ul>    
+                  
+        </div>
+      <div class="mobile-navbar-btn">
+     <div class="open-btn">
+        <span> <i class="fa-solid fa-bars"></i></span>
+     </div>
+      <div class="crox-btn">
+        <Span><i class="fa-solid fa-xmark"></i></Span>
+      </div>
+      </div>
+
+    </section>
+
+<!-- ======================registration form========================== -->
+<div class="form-container">
+<div class="form-box">
+    <h1 id="title">Sign Up</h1>
+    <form>
+    <div class="input-group">
+        <div class="input-field" id="nameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Full Name">
+        </div>
+        <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="E-mail">
+        </div>
+        <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+        <p>Last Password <a href="#">Click Here!</a></p>
+    </div>
+   
+       <div class="btn-field mt-4 pt-4">
+        <button type="button" id="signupBtn">Sign Up</button>
+        <button type="button" id="signinBtn" class="disable">Sign In</button>
+       </div>
+    </form>
+</div>
+</div>
+<!-- =========End======== -->
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+crossorigin="anonymous"></script>
+
+
+
+
+<!-- ======js===== -->
+<script>
+// =============for navbar================
+
+const mobile_nav =document.querySelector(".mobile-navbar-btn");
+ const nav_header =document.querySelector('#header');
+const toggleNavbar =()=>{
+    nav_header.classList.toggle("active");
+};
+
+
+ mobile_nav.addEventListener('click', ()=> toggleNavbar());
+
+// =======================registration form==========================
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let password = document.getElementById("passwordField");
+
+let title = document.getElementById("title");
+
+signinBtn.onclick = function(){
+  nameField.style.maxHeight ="0";
+  title.innerHTML="Sign In";
+  signupBtn.classList.add("disable");
+  signinBtn.classList.remove("disable");
+}
+signupBtn.onclick = function(){
+  nameField.style.maxHeight ="60px";
+  title.innerHTML="Sign Up";
+  signupBtn.classList.remove("disable");
+  signinBtn.classList.add("disable");
+}
+
+</script>
+</body>
+</html>
